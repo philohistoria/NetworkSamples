@@ -1,0 +1,13 @@
+library(igraph)#
+setwd("/Users/han/Program/R/NetworkSamples/")#
+karate <- graph.famous("Zachary")#
+wc <- walktrap.community(karate)#
+wc <- optimal.community(karate)#
+modularity(wc)#
+membership(wc)#
+plot(wc, karate)
+plot(wc,karate)
+ls()
+g = Graph([(0,1), (0,2), (1,2), (1,3)])#
+g1 = Graph([(0,1), (0,2), (1,2), (1,3),(2,3)])#
+g2 = Graph([(0,1), (0,2), (1,2), (1,3),(2,3),(2,4),(3,4)])
